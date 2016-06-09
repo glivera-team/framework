@@ -1,0 +1,52 @@
+// Breadcrumbs
+//
+// We use jade mixin for generating breadcrumbs. You can find markup and styles for pagination in <b>helpers/components/breadcrumbs</b> folder.
+//
+// markup:
+// mixin breadcrumbs(array,add_class)
+//   - add_class = add_class || ''
+//   ul.breadcrumbs_list(class=add_class)
+//     each crumb, index in array
+//       li.breadcrumbs_item
+//         if (index == array.length - 1)
+//           a.breadcrumbs_link.current_mod=crumb
+//         else
+//           a.breadcrumbs_link(href="#")=crumb
+// +breadcrumbs(['Home','Categories','Current'])
+//
+// Styleguide 6
+
+.breadcrumbs_list {
+	display:flex;
+	margin:50px;
+}
+
+.breadcrumbs_item {
+	padding:0 0 0 1rem;
+
+	&:before {
+		content: '>';
+		display: inline-block;
+		margin:0 1rem 0 0;
+	}
+
+	&:first-child {
+		padding: 0;
+
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.breadcrumbs_link {
+	color:$brand_default_color;
+
+	&.current_mod {
+		color:$color_text_base;
+
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+}

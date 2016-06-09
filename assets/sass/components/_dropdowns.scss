@@ -1,0 +1,126 @@
+// Dropdown
+//
+// We use additional classes for dropdowns. So you can just add these classes and styles to your existing elements and they becomes dropdowns. You can find marup, styles and scripts for dropdowns in <b>helpers/components/dropdowns</b> folder.
+//
+// .down_left_mod - Dropdown opened on down and left sides
+// .down_right_mod - Dropdown opened on down and right sides
+// .up_left_mod - Dropdown opened on up and left sides
+// .up_right_mod - Dropdown opened on up and right sides
+//
+// markup:
+// .test_container.center_mod
+//  .dropdown_container.dropdownContainer
+//   a.dropdown_trigger.dropdownTrigger(href="#") Home
+//   .dropdown_content(class="{$modifiers}")
+//    ul.dropdown_list
+//     li.dropdown_item
+//      a.dropdown_link(href="#") Lorem
+//     li.dropdown_item
+//      a.dropdown_link(href="#") Ipsum
+//     li.dropdown_item
+//      a.dropdown_link(href="#") Dolor
+//
+// Styleguide 4
+
+.dropdown_container {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown_trigger {
+	position: relative;
+	display: inline-block;
+	padding:0 3rem 0 1rem;
+	height: 4rem;
+	line-height: 4rem;
+	color:$white;
+	border-radius:1rem;
+	background: $brand_default_color;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		right: 1rem;
+		top: 50%;
+		margin-top:-.4rem;
+
+		@include triangle_narrow(bottom,$white,.8rem);
+
+		.dropdown_container.opened_mod & {
+			margin-top:-.8rem;
+
+			@include triangle_narrow(top,$white,.8rem);
+		}
+	}
+}
+
+.dropdown_content {
+	position: absolute;
+	z-index: 10;
+	min-width: 20rem;
+	background: #fff;
+	border: 1px solid $brand_default_color;
+	border-radius: .3rem;
+	overflow: hidden;
+	opacity: 0;
+	pointer-events: none;
+	transition:.3s ease;
+
+	&.down_left_mod {
+		left: 0;
+		top: calc(100% + .5rem);
+		transform:translate(0,-1rem);
+	}
+
+	&.down_right_mod {
+		right: 0;
+		top: calc(100% + .5rem);
+		transform:translate(0,-1rem);
+	}
+
+	&.up_left_mod {
+		left: 0;
+		bottom: calc(100% + .5rem);
+		transform:translate(0,-1rem);
+	}
+
+	&.up_right_mod {
+		right: 0;
+		bottom: calc(100% + .5rem);
+		transform:translate(0,-1rem);
+	}
+
+	.dropdown_container.opened_mod & {
+		transform:translate(0,0);
+		opacity: 1;
+		pointer-events: auto;
+	}
+}
+
+.dropdown_link {
+	display: block;
+	padding:.5rem 2rem;
+	color:$brand_default_color;
+	transition:.3s;
+
+	&:hover {
+		background: $brand_default_color;
+		color:#fff;
+	}
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+.test_container {
+	&.center_mod {
+		display: flex;
+		justify-content: center;
+		align-items:center;
+	}
+}

@@ -1,0 +1,336 @@
+//common styles for buttons
+@mixin button() {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-family:sans-serif;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+// color types
+%button_default {
+	color:$white;
+	background: $brand_default_color;
+	transition:background .3s ease;
+
+	&:hover {
+		background:darken($brand_default_color,5%);
+	}
+}
+
+%button_success {
+	color:$white;
+	background: $brand_success_color;
+	transition:background .3s ease;
+
+	&:hover {
+		background:darken($brand_success_color,5%);
+	}
+}
+
+%button_danger {
+	color:$white;
+	background: $brand_danger_color;
+	transition:background .3s ease;
+
+	&:hover {
+		background:darken($brand_danger_color,5%);
+	}
+}
+
+// size types
+%button_big {
+	height: 5rem;
+	padding:0 3rem;
+	line-height: 5rem;
+	font-size: 2rem;
+	border-radius:8px;
+
+	@include button();
+}
+
+%button_standart {
+	height: 3.6rem;
+	padding:0 2rem;
+	font-size: 1.6rem;
+	line-height: 3.6rem;
+	border-radius: 6px;
+
+	@include button();
+}
+
+%button_small {
+	height: 2.4rem;
+	padding:0 1rem;
+	font-size: 1.3rem;
+	line-height: 2.4rem;
+	border-radius: 4px;
+
+	@include button();
+}
+
+// Buttons
+//
+// We use sass @extend function to create buttons. All button's styles are separated to sizes and colors
+// You should write these extends in <b>assets/sass/helpers/_buttons_extends.scss</b> file
+//
+// Styleguide 1.0
+
+// Default button
+//
+// Each button has own class and optional additional class.
+// We use sass @extend function to create buttons. All button's styles are separated to sizes and colors
+// You should write these extends in <b>assets/sass/helpers/_buttons_extends.scss</b> file
+//
+// .big_mod       - Big button
+// .standart_mod - Standart-size button
+// .small_mod          - Small button
+//
+// markup:
+//a.btn_default(href="#" class="{$modifiers}") Button
+//
+// Styleguide 1.1
+
+//common styles for buttons
+@mixin button() {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-family:sans-serif;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+// color types
+%button_default {
+	color:$white;
+	background: $brand_default_color;
+	transition:background .3s ease;
+
+	&:hover {
+		background:darken($brand_default_color,5%);
+	}
+}
+
+// size types
+%button_big {
+	height: 5rem;
+	padding:0 3rem;
+	line-height: 5rem;
+	font-size: 2rem;
+	border-radius:8px;
+
+	@include button();
+}
+
+%button_standart {
+	height: 3.6rem;
+	padding:0 2rem;
+	font-size: 1.6rem;
+	line-height: 3.6rem;
+	border-radius: 6px;
+
+	@include button();
+}
+
+%button_small {
+	height: 2.4rem;
+	padding:0 1rem;
+	font-size: 1.3rem;
+	line-height: 2.4rem;
+	border-radius: 4px;
+
+	@include button();
+}
+
+.btn_default {
+	@extend %button_default;
+
+	&.big_mod {
+		@extend %button_big;
+	}
+
+	&.standart_mod {
+		@extend %button_standart;
+	}
+
+	&.small_mod {
+		@extend %button_small;
+	}
+}
+
+// Success button
+//
+// Each button has own class and optional additional class.
+// We use sass @extend function to create buttons. All button's styles are separated to sizes and colors
+// You should write these extends in <b>assets/sass/helpers/_buttons_extends.scss</b> file
+//
+// .big_mod       - Big button
+// .standart_mod - Standart-size button
+// .small_mod          - Small button
+//
+// markup:
+//a.btn_success(href="#" class="{$modifiers}") Button
+//
+// Styleguide 1.2
+
+//common styles for buttons
+@mixin button() {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-family:sans-serif;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+// color types
+%button_success {
+	color:$white;
+	background: $brand_success_color;
+	transition:background .3s ease;
+
+	&:hover {
+		background:darken($brand_success_color,5%);
+	}
+}
+
+
+// size types
+%button_big {
+	height: 5rem;
+	padding:0 3rem;
+	line-height: 5rem;
+	font-size: 2rem;
+	border-radius:8px;
+
+	@include button();
+}
+
+%button_standart {
+	height: 3.6rem;
+	padding:0 2rem;
+	font-size: 1.6rem;
+	line-height: 3.6rem;
+	border-radius: 6px;
+
+	@include button();
+}
+
+%button_small {
+	height: 2.4rem;
+	padding:0 1rem;
+	font-size: 1.3rem;
+	line-height: 2.4rem;
+	border-radius: 4px;
+
+	@include button();
+}
+
+.btn_success {
+	@extend %button_success;
+
+	&.big_mod {
+		@extend %button_big;
+	}
+
+	&.standart_mod {
+		@extend %button_standart;
+	}
+
+	&.small_mod {
+		@extend %button_small;
+	}
+}
+
+// Danger button
+//
+// Each button has own class and optional additional class.
+// We use sass @extend function to create buttons. All button's styles are separated to sizes and colors
+// You should write these extends in <b>assets/sass/helpers/_buttons_extends.scss</b> file
+//
+// .big_mod       - Big button
+// .standart_mod - Standart-size button
+// .small_mod          - Small button
+//
+// markup:
+//a.btn_danger(href="#" class="{$modifiers}") Button
+//
+// Styleguide 1.3
+
+//common styles for buttons
+@mixin button() {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-family:sans-serif;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+// color types
+%button_danger {
+	color:$white;
+	background: $brand_danger_color;
+	transition:background .3s ease;
+
+	&:hover {
+		background:darken($brand_danger_color,5%);
+	}
+}
+
+// size types
+%button_big {
+	height: 5rem;
+	padding:0 3rem;
+	line-height: 5rem;
+	font-size: 2rem;
+	border-radius:8px;
+
+	@include button();
+}
+
+%button_standart {
+	height: 3.6rem;
+	padding:0 2rem;
+	font-size: 1.6rem;
+	line-height: 3.6rem;
+	border-radius: 6px;
+
+	@include button();
+}
+
+%button_small {
+	height: 2.4rem;
+	padding:0 1rem;
+	font-size: 1.3rem;
+	line-height: 2.4rem;
+	border-radius: 4px;
+
+	@include button();
+}
+
+.btn_danger {
+	@extend %button_danger;
+
+	&.big_mod {
+		@extend %button_big;
+	}
+
+	&.standart_mod {
+		@extend %button_standart;
+	}
+
+	&.small_mod {
+		@extend %button_small;
+	}
+}

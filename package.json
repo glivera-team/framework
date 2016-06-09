@@ -1,0 +1,43 @@
+{
+  "name": "supervisor_template",
+  "version": "1.0.0",
+  "description": "1. If you don't have installed [node.js](https://nodejs.org/) - install it(latest version).Also you should install [python(2 version)](https://www.python.org/downloads/release/python-2710/) and gulp globally",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssfont64": "0.0.1",
+    "gulp-csso": "^1.1.0",
+    "gulp-directory-sync": "^1.2.3",
+    "gulp-html5-lint": "^1.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-inline-image": "0.0.5",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-uglify": "^1.5.3",
+    "imagemin-pngquant": "^4.2.2",
+    "postcss-assets": "^4.1.0",
+    "rimraf": "^2.5.2",
+    "sc5-styleguide": "^0.3.47"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatilin222/supervisor_template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gatilin222/supervisor_template/issues"
+  },
+  "homepage": "https://github.com/gatilin222/supervisor_template#readme"
+}

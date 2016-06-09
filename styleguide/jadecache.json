@@ -1,0 +1,130 @@
+{
+  "3": {
+    "key": "0414db80d90bdd5cf913788816fffefb",
+    "value": "\n<h2 class=\"section_title {$modifiers}\">Title of the section</h2>"
+  },
+  "4": {
+    "key": "06246844e8a800d70217d7ebdf51f5f5",
+    "value": "\n<div class=\"test_container center_mod\">\n  <div class=\"dropdown_container dropdownContainer\"><a href=\"#\" class=\"dropdown_trigger dropdownTrigger\">Home</a>\n    <div class=\"dropdown_content {$modifiers}\">\n      <ul class=\"dropdown_list\">\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Lorem</a></li>\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Ipsum</a></li>\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Dolor</a></li>\n      </ul>\n    </div>\n  </div>\n</div>"
+  },
+  "5": {
+    "key": "c21aa07c17a2e780de3279875bbdca61",
+    "value": "\n<div class=\"pag_block\">\n  <ul class=\"pag_list\">\n    <li class=\"pag_item prev_mod\"><a href=\"#\" class=\"pag_link prev_mod\"></a></li>\n    <li class=\"pag_item\"><a title=\"1\" class=\"pag_link active_mod\">1</a></li>\n    <li class=\"pag_item\"><a href=\"#\" title=\"2\" class=\"pag_link\">2</a></li>\n    <li class=\"pag_item\"><a href=\"#\" title=\"3\" class=\"pag_link\">3</a></li>\n    <li class=\"pag_item\"><a class=\"pag_link dots_mod\">&hellip;</a></li>\n    <li class=\"pag_item\"><a href=\"#\" title=\"4\" class=\"pag_link\">4</a></li>\n    <li class=\"pag_item\"><a href=\"#\" title=\"5\" class=\"pag_link\">5</a></li>\n    <li class=\"pag_item next_mod\"><a href=\"#\" class=\"pag_link next_mod\"></a></li>\n  </ul>\n</div>"
+  },
+  "6": {
+    "key": "7b7d3b94068fc332703da1cabdf1e612",
+    "value": "\n<ul class=\"breadcrumbs_list\">\n  <li class=\"breadcrumbs_item\"><a href=\"#\" class=\"breadcrumbs_link\">Home</a>\n  </li>\n  <li class=\"breadcrumbs_item\"><a href=\"#\" class=\"breadcrumbs_link\">Categories</a>\n  </li>\n  <li class=\"breadcrumbs_item\"><a class=\"breadcrumbs_link current_mod\">Current</a>\n  </li>\n</ul>"
+  },
+  "1.1": {
+    "key": "07e5203517547849c752e088fa96f5b2",
+    "value": "<a href=\"#\" class=\"btn_default {$modifiers}\">Button</a>"
+  },
+  "1.1 - .big_mod": {
+    "key": "07e5203517547849c752e088fa96f5b2",
+    "value": "<a href=\"#\" class=\"btn_default {$modifiers}\">Button</a>"
+  },
+  "1.1 - .standart_mod": {
+    "key": "07e5203517547849c752e088fa96f5b2",
+    "value": "<a href=\"#\" class=\"btn_default {$modifiers}\">Button</a>"
+  },
+  "1.1 - .small_mod": {
+    "key": "07e5203517547849c752e088fa96f5b2",
+    "value": "<a href=\"#\" class=\"btn_default {$modifiers}\">Button</a>"
+  },
+  "1.2": {
+    "key": "6f00c599f84c3f1bb0b25a570028064a",
+    "value": "<a href=\"#\" class=\"btn_success {$modifiers}\">Button</a>"
+  },
+  "1.2 - .big_mod": {
+    "key": "6f00c599f84c3f1bb0b25a570028064a",
+    "value": "<a href=\"#\" class=\"btn_success {$modifiers}\">Button</a>"
+  },
+  "1.2 - .standart_mod": {
+    "key": "6f00c599f84c3f1bb0b25a570028064a",
+    "value": "<a href=\"#\" class=\"btn_success {$modifiers}\">Button</a>"
+  },
+  "1.2 - .small_mod": {
+    "key": "6f00c599f84c3f1bb0b25a570028064a",
+    "value": "<a href=\"#\" class=\"btn_success {$modifiers}\">Button</a>"
+  },
+  "1.3": {
+    "key": "0f47fcb6a7a0564d7068a88e238082ff",
+    "value": "<a href=\"#\" class=\"btn_danger {$modifiers}\">Button</a>"
+  },
+  "1.3 - .big_mod": {
+    "key": "0f47fcb6a7a0564d7068a88e238082ff",
+    "value": "<a href=\"#\" class=\"btn_danger {$modifiers}\">Button</a>"
+  },
+  "1.3 - .standart_mod": {
+    "key": "0f47fcb6a7a0564d7068a88e238082ff",
+    "value": "<a href=\"#\" class=\"btn_danger {$modifiers}\">Button</a>"
+  },
+  "1.3 - .small_mod": {
+    "key": "0f47fcb6a7a0564d7068a88e238082ff",
+    "value": "<a href=\"#\" class=\"btn_danger {$modifiers}\">Button</a>"
+  },
+  "2.1": {
+    "key": "427dbb295e0b68bc0c37e8ad6f2e5f91",
+    "value": "\n<dl class=\"form_cell form_cell_v1_mod\">\n  <dt class=\"form_cell_title form_v1_mod\">\n    <label for=\"text_1\">Input with title</label>\n  </dt>\n  <dd class=\"form_field_wrap form_v1_mod\">\n    <input type=\"text\" id=\"text_1\" placeholder=\"Placeholder text\" class=\"form_field default_mod \">\n  </dd>\n</dl>\n<dl class=\"form_cell form_cell_v2_mod\">\n  <dt class=\"form_cell_title form_v2_mod\">\n    <label for=\"text_2\">Input with horizontal layout</label>\n  </dt>\n  <dd class=\"form_field_wrap form_v2_mod\">\n    <input type=\"text\" id=\"text_2\" placeholder=\"Placeholder text\" class=\"form_field default_mod \">\n  </dd>\n</dl>\n<dl class=\"form_cell form_cell_v1_mod\">\n  <dt class=\"form_cell_title form_v1_mod hline_hide_mod\">\n    <label for=\"text_3\">Input without title</label>\n  </dt>\n  <dd class=\"form_field_wrap form_v1_mod hline_hide_mod\">\n    <input type=\"text\" id=\"text_3\" placeholder=\"Input without title\" class=\"form_field default_mod \">\n  </dd>\n</dl>\n<dl class=\"form_cell form_cell_v1_mod\">\n  <dt class=\"form_cell_title form_v1_mod hline_hide_mod\">\n    <label for=\"text_4\">Input with icon</label>\n  </dt>\n  <dd class=\"form_field_wrap form_v1_mod hline_hide_mod\">\n    <input type=\"text\" id=\"text_4\" placeholder=\"With right icon\" class=\"form_field default_mod right_icon_mod\"><a href=\"#\" class=\"input_icon right_mod search_mod\">search</a>\n  </dd>\n</dl>\n<dl class=\"form_cell form_cell_v1_mod\">\n  <dt class=\"form_cell_title form_v1_mod hline_hide_mod\">\n    <label for=\"text_5\">Input with icon</label>\n  </dt>\n  <dd class=\"form_field_wrap form_v1_mod hline_hide_mod\">\n    <input type=\"text\" id=\"text_5\" placeholder=\"With left icon\" class=\"form_field default_mod left_icon_mod\"><a href=\"#\" class=\"input_icon left_mod search_mod\">search</a>\n  </dd>\n</dl>"
+  },
+  "2.2": {
+    "key": "d77af54fd2a6415332b02ef755b0d4d9",
+    "value": "\n<dl class=\"form_cell form_cell_v1_mod\">\n  <dt class=\"form_cell_title form_v1_mod\">\n    <label for=\"textarea_1\">Textarea with title</label>\n  </dt>\n  <dd class=\"form_field_wrap form_v1_mod\">\n    <textarea id=\"textarea_1\" placeholder=\"Placeholder text\" class=\"form_field default_mod textarea_mod_1\"></textarea>\n  </dd>\n</dl>\n<dl class=\"form_cell form_cell_v1_mod\">\n  <dt class=\"form_cell_title form_v1_mod hline_hide_mod\">\n    <label for=\"textarea_1\">Textarea without title</label>\n  </dt>\n  <dd class=\"form_field_wrap form_v1_mod hline_hide_mod\">\n    <textarea id=\"textarea_1\" placeholder=\"Textarea without title\" class=\"form_field default_mod textarea_mod_1\"></textarea>\n  </dd>\n</dl>"
+  },
+  "2.3": {
+    "key": "67734187137193ef8dd4cf4e1850d2f1",
+    "value": "\n<label class=\"radio_check check_1_mod\">\n  <input name=\"check\" type=\"checkbox\" class=\"radio_check_input check_1_mod \"><span class=\"radio_check_text check_1_mod\">Title of checkbox</span>\n</label>\n<label class=\"radio_check check_1_mod\">\n  <input name=\"check\" type=\"checkbox\" class=\"radio_check_input check_1_mod \"><span class=\"radio_check_text check_1_mod\">Title of checkbox with a very long text and you can paste here any text</span>\n</label>"
+  },
+  "2.4": {
+    "key": "4307daa1f9d6aff24dc0376e481361e7",
+    "value": "\n<label class=\"radio_check radio_1_mod\">\n  <input name=\"radio\" type=\"radio\" class=\"radio_check_input radio_1_mod \"><span class=\"radio_check_text radio_1_mod\">Title of the radio</span>\n</label>\n<label class=\"radio_check radio_1_mod\">\n  <input name=\"radio\" type=\"radio\" checked=\"checked\" class=\"radio_check_input radio_1_mod \"><span class=\"radio_check_text radio_1_mod\">Title of the radio with a very long text and you can paste here any text</span>\n</label>"
+  },
+  "2.5": {
+    "key": "64ca5d162151c0c5b92fd5d25acfebe7",
+    "value": "\n<div class=\"test_container\">\n  <dl class=\"form_cell form_cell_v1_mod\">\n    <dt class=\"form_cell_title form_v1_mod\">\n      <label for=\"select\">some title</label>\n    </dt>\n    <dd class=\"form_field_wrap form_v1_mod\">\n      <select id=\"select\" data-placeholder=\"\" class=\"form_field default_mod \">\n        <option value=\"Option 1\">Option 1</option>\n        <option value=\"Option 2\">Option 2</option>\n        <option value=\"Option 3\">Option 3</option>\n      </select>\n    </dd>\n  </dl>\n</div>"
+  },
+  "3 - .v1_mod": {
+    "key": "0414db80d90bdd5cf913788816fffefb",
+    "value": "\n<h2 class=\"section_title {$modifiers}\">Title of the section</h2>"
+  },
+  "3 - .v1_mod.gray_mod": {
+    "key": "0414db80d90bdd5cf913788816fffefb",
+    "value": "\n<h2 class=\"section_title {$modifiers}\">Title of the section</h2>"
+  },
+  "3 - .v1_mod.center_mod": {
+    "key": "0414db80d90bdd5cf913788816fffefb",
+    "value": "\n<h2 class=\"section_title {$modifiers}\">Title of the section</h2>"
+  },
+  "3 - .v2_mod": {
+    "key": "0414db80d90bdd5cf913788816fffefb",
+    "value": "\n<h2 class=\"section_title {$modifiers}\">Title of the section</h2>"
+  },
+  "3 - .v2_mod.bordered_up_mod": {
+    "key": "0414db80d90bdd5cf913788816fffefb",
+    "value": "\n<h2 class=\"section_title {$modifiers}\">Title of the section</h2>"
+  },
+  "3 - .v2_mod.bordered_down_mod.gray_mod": {
+    "key": "0414db80d90bdd5cf913788816fffefb",
+    "value": "\n<h2 class=\"section_title {$modifiers}\">Title of the section</h2>"
+  },
+  "3 - .v2_mod.bordered_down_mod.inline_mod": {
+    "key": "0414db80d90bdd5cf913788816fffefb",
+    "value": "\n<h2 class=\"section_title {$modifiers}\">Title of the section</h2>"
+  },
+  "4 - .down_left_mod": {
+    "key": "06246844e8a800d70217d7ebdf51f5f5",
+    "value": "\n<div class=\"test_container center_mod\">\n  <div class=\"dropdown_container dropdownContainer\"><a href=\"#\" class=\"dropdown_trigger dropdownTrigger\">Home</a>\n    <div class=\"dropdown_content {$modifiers}\">\n      <ul class=\"dropdown_list\">\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Lorem</a></li>\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Ipsum</a></li>\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Dolor</a></li>\n      </ul>\n    </div>\n  </div>\n</div>"
+  },
+  "4 - .down_right_mod": {
+    "key": "06246844e8a800d70217d7ebdf51f5f5",
+    "value": "\n<div class=\"test_container center_mod\">\n  <div class=\"dropdown_container dropdownContainer\"><a href=\"#\" class=\"dropdown_trigger dropdownTrigger\">Home</a>\n    <div class=\"dropdown_content {$modifiers}\">\n      <ul class=\"dropdown_list\">\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Lorem</a></li>\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Ipsum</a></li>\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Dolor</a></li>\n      </ul>\n    </div>\n  </div>\n</div>"
+  },
+  "4 - .up_left_mod": {
+    "key": "06246844e8a800d70217d7ebdf51f5f5",
+    "value": "\n<div class=\"test_container center_mod\">\n  <div class=\"dropdown_container dropdownContainer\"><a href=\"#\" class=\"dropdown_trigger dropdownTrigger\">Home</a>\n    <div class=\"dropdown_content {$modifiers}\">\n      <ul class=\"dropdown_list\">\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Lorem</a></li>\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Ipsum</a></li>\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Dolor</a></li>\n      </ul>\n    </div>\n  </div>\n</div>"
+  },
+  "4 - .up_right_mod": {
+    "key": "06246844e8a800d70217d7ebdf51f5f5",
+    "value": "\n<div class=\"test_container center_mod\">\n  <div class=\"dropdown_container dropdownContainer\"><a href=\"#\" class=\"dropdown_trigger dropdownTrigger\">Home</a>\n    <div class=\"dropdown_content {$modifiers}\">\n      <ul class=\"dropdown_list\">\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Lorem</a></li>\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Ipsum</a></li>\n        <li class=\"dropdown_item\"><a href=\"#\" class=\"dropdown_link\">Dolor</a></li>\n      </ul>\n    </div>\n  </div>\n</div>"
+  }
+}

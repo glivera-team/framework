@@ -1,0 +1,33 @@
+//------------------------------------------------------------base styles
+html {
+	height: 100%;
+	font: normal 10px/1.33 $font_1;
+	font-weight: 300;
+}
+
+body {
+	position: relative;
+	height: 100%;
+	font-size: $font_size_base;
+	color: $color_text_base;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: $body_bg;
+}
+.wrapper {
+	position: relative;
+	min-height:100%;
+	height: auto !important;
+	overflow:hidden;
+}
+
+a {
+	text-decoration: none;
+	color:$color_link_base;
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+//------------------------------------------------------------base styles###

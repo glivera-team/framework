@@ -1,0 +1,148 @@
+include _global_vars
+
+mixin head(array)
+	meta(charset='UTF-8')
+	title!=array.title_inner
+	meta(name="viewport", content="width=device-width")
+	if production
+		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		meta(name="format-detection", content="telephone=no")
+		link(type="image/x-icon", rel="shortcut icon", href="favicon.ico")
+		link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+		link(rel="apple-touch-icon", href="apple-touch-icon.png")
+		link(rel="apple-touch-icon", sizes="57x57", href="apple-touch-icon-57x57.png")
+		link(rel="apple-touch-icon", sizes="72x72", href="apple-touch-icon-72x72.png")
+		link(rel="apple-touch-icon", sizes="76x76", href="apple-touch-icon-76x76.png")
+		link(rel="apple-touch-icon", sizes="114x114", href="apple-touch-icon-114x114.png")
+		link(rel="apple-touch-icon", sizes="120x120", href="apple-touch-icon-120x120.png")
+		link(rel="apple-touch-icon", sizes="144x144", href="apple-touch-icon-144x144.png")
+		link(rel="apple-touch-icon", sizes="152x152", href="apple-touch-icon-152x152.png")
+	link(rel="stylesheet" media="all" href="styles/main_global.css")
+
+mixin scripts
+	if jQuery
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+	if jQueryUI
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script>window.jQuery.ui || document.write('<script src="js/jquery-ui.min.js"><\/script>')</script>
+	script(src="js/all.js")
+	script(src='js/main.js')
+
+mixin form_element(config)
+	//- default values
+	- config.class_array = config.class_array || {}
+	- config.class_array.block_class_mod = config.class_array.block_class_mod || ''
+	- config.class_array.class_mod = config.class_array.class_mod || ''
+	- config.class_array.elem_class = config.class_array.elem_class || ''
+	- config.add_class = config.add_class || ''
+	- config.placeholder = config.placeholder || ''
+	if !config.id
+		- config.id = config.title.replace(/\s/g, '_').replace(/[.,:;(){}/?!@#$%&*]/g, '')
+	else
+		- config.id = config.id.replace(/\s/g, '_').replace(/[.,:;(){}/?!@#$%&*]/g, '')
+	if config.type === 'text' || config.type === 'password' || config.type === 'email' || config.type === 'tel' || config.type === 'textarea' || config.type === 'select' || config.type === 'file'
+		dl.form_cell(class=config.class_array.block_class_mod)
+			dt.form_c_hline(class=config.class_array.class_mod)
+				label(for=config.id) #{config.title}
+			dd.form_c_f_w(class=config.class_array.class_mod)
+				if config.type === 'text' || config.type === 'password' || config.type === 'email' || config.type === 'tel'
+					if config.value
+						input.f_c_field(value=config.value type=config.type id=config.id class='#{config.class_array.elem_class} #{config.add_class}' placeholder=config.placeholder)
+						block
+					else
+						input.f_c_field(type=config.type id=config.id class='#{config.class_array.elem_class} #{config.add_class}' placeholder=config.placeholder)
+						block
+				if config.type === 'textarea'
+					textarea.f_c_field(id=config.id class='#{config.class_array.elem_class} #{config.add_class}' placeholder=config.placeholder) #{config.value}
+					block
+				if config.type === 'file'
+					input.f_c_field(type=config.type id=config.id class='#{config.class_array.elem_class} #{config.add_class}' placeholder=config.placeholder)
+					.f_c_field_file_field
+						span.f_c_field_file_text #{config.title}
+						span.f_c_field_file_butt Choose File
+				if config.type === 'select'
+					select.f_c_field(id=config.id class='#{config.class_array.elem_class} #{config.add_class}' data-placeholder=config.placeholder)
+						each option in config.options
+							option(value=option)= option
+					block
+	if config.type === 'checkbox' || config.type === 'radio'
+		label.lbl_rb_ch_block(class=config.class_array.block_class_mod)
+			if config.checked
+				input.lbl_inp_rb_ch(name=config.name type=config.type class='#{config.class_array.elem_class} #{config.add_class}' checked='checked')
+			else
+				input.lbl_inp_rb_ch(name=config.name type=config.type class='#{config.class_array.elem_class} #{config.add_class}')
+			span.lbl_rb_ch_text(class=config.class_array.class_mod) #{config.title}
+
+mixin loop_while(counter)
+	- i=0;
+	while i < counter
+		-i++;
+		block
+
+mixin loop_while_sub(counter)
+	- j = 0;
+		while j < counter
+			-j++;
+			block
+
+mixin breadcrumbs(array,add_class)
+	- add_class = add_class || ''
+	ul.breadcrumbs_list(class=add_class)
+		each crumb, index in array
+			li.breadcrumbs_item
+				if (index == array.length - 1)
+					a.breadcrumbs_link.current_mod=crumb
+				else
+					a.breadcrumbs_link(href="#")=crumb
+
+mixin main_menu(menuArray)
+	ul.main_menu_list(class="#{menuArray.mod}")
+		each item in menuArray.items
+			if item.active
+				li.main_menu_item.active_mod(class="#{menuArray.mod}")
+					a.main_menu_link(href="#" class="#{menuArray.mod}") #{item.title}
+			else
+				li.main_menu_item(class="#{menuArray.mod}")
+					a.main_menu_link(href="#" class="#{menuArray.mod}") #{item.title}
+
+mixin social(items,mod)
+	ul.social_list(class="#{mod}")
+		each item in items
+			li.social_item(class="#{mod}")
+				a.social_link(href="#" class="#{item}_mod #{mod}") #{item}
+
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="#icon-" + name)
+
+mixin pagination(config)
+	- config.mod = config.mod || ''
+	- config.active = config.active || 1
+	.pag_block(class='#{config.mod}')
+		ul.pag_list(class="#{config.mod}")
+			if config.arrows
+				li.pag_item.prev_mod(class="#{config.mod}")
+					a.pag_link.prev_mod(href="#" class="#{config.mod}")
+			- var i = 1;
+			while i <= config.pages
+				if i == config.pages - 1
+					li.pag_item(class="#{config.mod}")
+						a.pag_link.dots_mod(class="#{config.mod}") &hellip;
+					li.pag_item(class="#{config.mod}")
+						a.pag_link(href="#" title="#{i}" class="#{config.mod}") #{i}
+				else if i == config.active
+					li.pag_item(class="#{config.mod}")
+						a.pag_link.active_mod(title="#{i}" class="#{config.mod}") #{i}
+				else
+					li.pag_item(class="#{config.mod}")
+						a.pag_link(href="#" title="#{i}" class="#{config.mod}") #{i}
+				-i++
+			if config.arrows
+				li.pag_item.next_mod
+					a.pag_link.next_mod(href="#" class="#{config.mod}")
+
+
+

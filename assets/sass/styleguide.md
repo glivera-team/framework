@@ -1,0 +1,1 @@
+Glivera team framework is a quick-start tool for building web pages. We use jade, sass, gulp. You can view and fork it on <a href="https://github.com/glivera-team/glivera-team-template" target="_blank">github</a>

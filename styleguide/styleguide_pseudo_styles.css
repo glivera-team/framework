@@ -1,0 +1,294 @@
+.pseudo-class-focus {
+  outline: 0;
+}
+
+input.pseudo-class-focus::-webkit-input-placeholder,
+textarea.pseudo-class-focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input.pseudo-class-focus::-moz-placeholder,
+textarea.pseudo-class-focus::-moz-placeholder {
+  color: transparent;
+}
+
+input.pseudo-class-focus:-ms-input-placeholder,
+textarea.pseudo-class-focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+a.pseudo-class-hover,
+a.pseudo-class-focus {
+  text-decoration: underline;
+}
+
+.chosen-container-single .chosen-single abbr.pseudo-class-hover {
+  background-position: -42px -10px;
+}
+
+.chosen-container-single.chosen-disabled .chosen-single abbr.pseudo-class-hover {
+  background-position: -42px -10px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close.pseudo-class-hover {
+  background-position: -42px -10px;
+}
+
+.btn_default.pseudo-class-hover {
+  background: #258cd1;
+}
+
+.btn_success.pseudo-class-hover {
+  background: #29b765;
+}
+
+.btn_danger.pseudo-class-hover {
+  background: #e43725;
+}
+
+.btn_default.big_mod.pseudo-class-hover,
+.btn_success.big_mod.pseudo-class-hover,
+.btn_danger.big_mod.pseudo-class-hover,
+.btn_default.big_mod.pseudo-class-focus,
+.btn_success.big_mod.pseudo-class-focus,
+.btn_danger.big_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_default.standart_mod.pseudo-class-hover,
+.btn_success.standart_mod.pseudo-class-hover,
+.btn_danger.standart_mod.pseudo-class-hover,
+.btn_default.standart_mod.pseudo-class-focus,
+.btn_success.standart_mod.pseudo-class-focus,
+.btn_danger.standart_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_default.small_mod.pseudo-class-hover,
+.btn_success.small_mod.pseudo-class-hover,
+.btn_danger.small_mod.pseudo-class-hover,
+.btn_default.small_mod.pseudo-class-focus,
+.btn_success.small_mod.pseudo-class-focus,
+.btn_danger.small_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_default.pseudo-class-hover {
+  background: #258cd1;
+}
+
+.btn_default.big_mod.pseudo-class-hover,
+.btn_success.big_mod.pseudo-class-hover,
+.btn_danger.big_mod.pseudo-class-hover,
+.btn_default.big_mod.pseudo-class-focus,
+.btn_success.big_mod.pseudo-class-focus,
+.btn_danger.big_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_default.standart_mod.pseudo-class-hover,
+.btn_success.standart_mod.pseudo-class-hover,
+.btn_danger.standart_mod.pseudo-class-hover,
+.btn_default.standart_mod.pseudo-class-focus,
+.btn_success.standart_mod.pseudo-class-focus,
+.btn_danger.standart_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_default.small_mod.pseudo-class-hover,
+.btn_success.small_mod.pseudo-class-hover,
+.btn_danger.small_mod.pseudo-class-hover,
+.btn_default.small_mod.pseudo-class-focus,
+.btn_success.small_mod.pseudo-class-focus,
+.btn_danger.small_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_success.pseudo-class-hover {
+  background: #29b765;
+}
+
+.btn_default.big_mod.pseudo-class-hover,
+.btn_success.big_mod.pseudo-class-hover,
+.btn_danger.big_mod.pseudo-class-hover,
+.btn_default.big_mod.pseudo-class-focus,
+.btn_success.big_mod.pseudo-class-focus,
+.btn_danger.big_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_default.standart_mod.pseudo-class-hover,
+.btn_success.standart_mod.pseudo-class-hover,
+.btn_danger.standart_mod.pseudo-class-hover,
+.btn_default.standart_mod.pseudo-class-focus,
+.btn_success.standart_mod.pseudo-class-focus,
+.btn_danger.standart_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_default.small_mod.pseudo-class-hover,
+.btn_success.small_mod.pseudo-class-hover,
+.btn_danger.small_mod.pseudo-class-hover,
+.btn_default.small_mod.pseudo-class-focus,
+.btn_success.small_mod.pseudo-class-focus,
+.btn_danger.small_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_danger.pseudo-class-hover {
+  background: #e43725;
+}
+
+.btn_default.big_mod.pseudo-class-hover,
+.btn_success.big_mod.pseudo-class-hover,
+.btn_danger.big_mod.pseudo-class-hover,
+.btn_default.big_mod.pseudo-class-focus,
+.btn_success.big_mod.pseudo-class-focus,
+.btn_danger.big_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_default.standart_mod.pseudo-class-hover,
+.btn_success.standart_mod.pseudo-class-hover,
+.btn_danger.standart_mod.pseudo-class-hover,
+.btn_default.standart_mod.pseudo-class-focus,
+.btn_success.standart_mod.pseudo-class-focus,
+.btn_danger.standart_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.btn_default.small_mod.pseudo-class-hover,
+.btn_success.small_mod.pseudo-class-hover,
+.btn_danger.small_mod.pseudo-class-hover,
+.btn_default.small_mod.pseudo-class-focus,
+.btn_success.small_mod.pseudo-class-focus,
+.btn_danger.small_mod.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.form_field.default_mod:not(.select_rediz_coosen).pseudo-class-focus {
+  border: 1px solid #000;
+}
+
+.form_field.default_mod.pseudo-class-focus:not(.select_rediz_coosen)::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form_field.default_mod.pseudo-class-focus:not(.select_rediz_coosen)::-moz-placeholder {
+  color: transparent;
+}
+
+.form_field.default_mod:-ms-input-placeholder:not(.select_rediz_coosen).pseudo-class-focus {
+  color: transparent;
+}
+
+.form_cell.form_cell_v1_mod.pseudo-class-first-child {
+  margin: 0;
+}
+
+.form_cell.form_cell_v2_mod.pseudo-class-first-child {
+  margin: 0;
+}
+
+.form_field.default_mod:not(.select_rediz_coosen).pseudo-class-focus {
+  border: 1px solid #000;
+}
+
+.form_field.default_mod.pseudo-class-focus:not(.select_rediz_coosen)::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form_field.default_mod.pseudo-class-focus:not(.select_rediz_coosen)::-moz-placeholder {
+  color: transparent;
+}
+
+.form_field.default_mod:-ms-input-placeholder:not(.select_rediz_coosen).pseudo-class-focus {
+  color: transparent;
+}
+
+.form_cell.form_cell_v1_mod.pseudo-class-first-child {
+  margin: 0;
+}
+
+.radio_check.pseudo-class-first-child {
+  margin: 0;
+}
+
+.radio_check_input.pseudo-class-checked + .radio_check_text.check_1_mod:after {
+  opacity: 1;
+}
+
+.radio_check.pseudo-class-first-child {
+  margin: 0;
+}
+
+.radio_check_input.pseudo-class-checked + .radio_check_text.radio_1_mod:after {
+  transform: scale(1);
+}
+
+.dropdown_trigger.pseudo-class-hover,
+.dropdown_trigger.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.dropdown_link.pseudo-class-hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.dropdown_link.pseudo-class-hover,
+.dropdown_link.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.pag_item.pseudo-class-first-child {
+  padding: 0;
+}
+
+.pag_link.pseudo-class-hover {
+  color: #fff;
+  background: #3498db;
+}
+
+.pag_link.pseudo-class-hover,
+.pag_link.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.pag_link.dots_mod.pseudo-class-hover {
+  color: #000;
+  background: #fff;
+}
+
+.pag_link.prev_mod.pseudo-class-hover:before {
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(45deg);
+  border-bottom: 0.2rem solid #fff;
+  border-left: 0.2rem solid #fff;
+  border-top: 0;
+  border-right: 0;
+}
+
+.pag_link.next_mod.pseudo-class-hover:before {
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(45deg);
+  border-top: 0.2rem solid #fff;
+  border-right: 0.2rem solid #fff;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.breadcrumbs_item.pseudo-class-first-child {
+  padding: 0;
+}
+
+.breadcrumbs_item.pseudo-class-first-child:before {
+  display: none;
+}
+
+.breadcrumbs_link.current_mod.pseudo-class-hover,
+.breadcrumbs_link.current_mod.pseudo-class-focus {
+  text-decoration: none;
+}

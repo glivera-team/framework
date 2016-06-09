@@ -1,0 +1,48 @@
+// Section title
+//
+// Titles can have different colors,sizes and alignment. It can be quietly difficult to create semantic classes such as 'big_mod' or 'small_mod', so we decided to create version-model-classes.
+//
+// .v1_mod - First version of the title
+// .v1_mod.gray_mod - Color modifier
+// .v1_mod.center_mod - Alignment modifier
+// .v2_mod - Second version of the title
+// .v2_mod.bordered_up_mod - Decor modifier(border in this case)
+// .v2_mod.bordered_down_mod.gray_mod  - Another decor modifier(border in this case) + color modifier
+// .v2_mod.bordered_down_mod.inline_mod - Another decor modifier(border in this case) + box-model modifier
+//
+// markup:
+// h2.section_title(class="{$modifiers}") Title of the section
+//
+// Styleguide 3
+
+.section_title {
+	&.gray_mod {
+		color:#aaa;
+	}
+
+	&.v1_mod {
+		font-size: 3rem;
+		text-transform: uppercase;
+
+		&.center_mod {
+			text-align: center;
+		}
+	}
+	&.v2_mod {
+		font-family:'Times New Roman',sans-serif;
+		font-size: 4rem;
+		font-weight: 400;
+
+		&.bordered_up_mod {
+			border-top:1px solid currentColor;
+		}
+
+		&.bordered_down_mod {
+			border-bottom:1px solid currentColor;
+		}
+
+		&.inline_mod {
+			display: inline-block;
+		}
+	}
+}
