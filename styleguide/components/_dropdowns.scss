@@ -22,6 +22,31 @@
 //
 // Styleguide 4
 
+// variables
+$white:#fff;
+$brand_default_color: #3498db;
+
+// mixins
+@mixin triangle_narrow($side,$color,$size) {
+	$narrow_size: $size/2;
+	@if $side == left {
+		border:$narrow_size solid transparent;
+		border-right:$size solid $color;
+	}
+	@if $side == right {
+		border:$narrow_size solid transparent;
+		border-left:$size solid $color;
+	}
+	@if $side == top {
+		border:$narrow_size solid transparent;
+		border-bottom:$size solid $color;
+	}
+	@if $side == bottom {
+		border:$narrow_size solid transparent;
+		border-top:$size solid $color;
+	}
+}
+
 .dropdown_container {
 	position: relative;
 	display: inline-block;
@@ -62,7 +87,7 @@
 	position: absolute;
 	z-index: 10;
 	min-width: 20rem;
-	background: #fff;
+	background: $white;
 	border: 1px solid $brand_default_color;
 	border-radius: .3rem;
 	overflow: hidden;
@@ -109,7 +134,7 @@
 
 	&:hover {
 		background: $brand_default_color;
-		color:#fff;
+		color:$white;
 	}
 
 	&:hover, &:focus {

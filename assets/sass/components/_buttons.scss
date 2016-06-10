@@ -74,7 +74,7 @@
 
 // Buttons
 //
-// We use sass @extend function to create buttons. All button's styles are separated to sizes and colors
+// We use sass @extend function to create buttons. All button's styles are separated to sizes and colors.
 // You should write these extends in <b>assets/sass/helpers/_buttons_extends.scss</b> file
 //
 // Styleguide 1.0
@@ -93,6 +93,12 @@
 //a.btn_default(href="#" class="{$modifiers}") Button
 //
 // Styleguide 1.1
+
+// variables
+$white:#fff;
+$brand_default_color: #3498db;
+$brand_success_color: #2ecc71;
+$brand_danger_color: #e74c3c;
 
 //common styles for buttons
 @mixin button() {
@@ -179,6 +185,12 @@
 //
 // Styleguide 1.2
 
+// variables
+$white:#fff;
+$brand_default_color: #3498db;
+$brand_success_color: #2ecc71;
+$brand_danger_color: #e74c3c;
+
 //common styles for buttons
 @mixin button() {
 	display: inline-block;
@@ -264,6 +276,12 @@
 //a.btn_danger(href="#" class="{$modifiers}") Button
 //
 // Styleguide 1.3
+
+// variables
+$white:#fff;
+$brand_default_color: #3498db;
+$brand_success_color: #2ecc71;
+$brand_danger_color: #e74c3c;
 
 //common styles for buttons
 @mixin button() {

@@ -167,7 +167,7 @@ a.pseudo-class-focus {
 }
 
 .form_field.default_mod:not(.select_rediz_coosen).pseudo-class-focus {
-  border: 1px solid #000;
+  box-shadow: 0 0 0 1px #000;
 }
 
 .form_field.default_mod.pseudo-class-focus:not(.select_rediz_coosen)::-webkit-input-placeholder {
@@ -191,7 +191,7 @@ a.pseudo-class-focus {
 }
 
 .form_field.default_mod:not(.select_rediz_coosen).pseudo-class-focus {
-  border: 1px solid #000;
+  box-shadow: 0 0 0 1px #000;
 }
 
 .form_field.default_mod.pseudo-class-focus:not(.select_rediz_coosen)::-webkit-input-placeholder {
